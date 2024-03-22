@@ -1,5 +1,9 @@
 from twilio.rest import Client
 import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 def twilioIntegration(Message):
     account_sid = os.getenv('TWILIO_ACCOUNT_SID')
